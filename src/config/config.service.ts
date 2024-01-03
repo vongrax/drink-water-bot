@@ -3,7 +3,7 @@ import {config,DotenvParseOutput} from "dotenv";
 
 export class ConfigService implements IConfigService {
 
-private config: DotenvParseOutput;
+private readonly config: DotenvParseOutput;
     constructor() {
         const  {error, parsed} = config();
 
